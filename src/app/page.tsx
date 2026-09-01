@@ -4,6 +4,7 @@ import TrustStrip from './components/home/ui/TrustStrip';
 import Services from './components/home/ui/Services';
 import WhyBenal from './components/home/ui/WhyBenal';
 import Process from './components/home/ui/Process';
+import CTA from './components/home/ui/CTA';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Services />
         <WhyBenal />
         <Process />
+        <CTA />
       </main>
     </>
   );
