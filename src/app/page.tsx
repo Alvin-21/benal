@@ -3,6 +3,7 @@ import Hero from './components/home/ui/Hero';
 import TrustStrip from './components/home/ui/TrustStrip';
 import Services from './components/home/ui/Services';
 import WhyBenal from './components/home/ui/WhyBenal';
+import Process from './components/home/ui/Process';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <TrustStrip />
         <Services />
         <WhyBenal />
+        <Process />
       </main>
     </>
   );
