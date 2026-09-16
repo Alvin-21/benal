@@ -25,6 +25,7 @@ const mobileLinks = [
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
@@ -156,7 +157,10 @@ export default function Navigation() {
           {/* Hamburger */}
           <button
             className="lg:hidden flex flex-col gap-[5px] p-2 rounded-md transition-colors duration-200 hover:bg-cream/5"
-            onClick={() => setMobileOpen(!mobileOpen)}
+            onClick={() => {
+              setMobileOpen(!mobileOpen)
+              setMobileSolutionsOpen(false)
+            }}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileOpen}
             aria-controls="mobileNav"
@@ -189,11 +193,58 @@ export default function Navigation() {
         className={`fixed inset-0 z-[99] bg-bg/[0.97] backdrop-blur-xl flex flex-col gap-2 overflow-y-auto pt-28 px-6 pb-10 transition-opacity duration-300 ${mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
           }`}
       >
-        {mobileLinks.map((link) => (
+        {mobileLinks.map((link) => link.label === 'Solutions' ? (
+          <div key={link.label} className="border-b border-gold/10">
+            <button
+              type="button"
+              onClick={() => setMobileSolutionsOpen((prev) => !prev)}
+              aria-expanded={mobileSolutionsOpen}
+              aria-controls="mobileSolutions"
+              className="flex w-full items-center justify-between text-[22px] font-bold text-cream py-3 tracking-tight"
+            >
+              {link.label}
+              <svg
+                width="22" height="22" fill="none" stroke="#22AFA9" strokeWidth="2"
+                viewBox="0 0 24 24" aria-hidden="true"
+                className={`transition-transform duration-200 ${mobileSolutionsOpen ? 'rotate-180' : ''}`}
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div
+              id="mobileSolutions"
+              className={`overflow-hidden transition-all duration-300 ${mobileSolutionsOpen ? 'max-h-[900px] pb-3 opacity-100' : 'max-h-0 opacity-0'}`}
+            >
+              {megaServices.map((service) => (
+                <div key={service.label} className="py-2">
+                  <div className="text-[11px] font-bold tracking-[0.12em] uppercase text-teal mb-1.5">
+                    {service.label}
+                  </div>
+                  {service.items.map((item) => (
+                    <Link
+                      key={item}
+                      href="#services"
+                      onClick={() => {
+                        setMobileOpen(false)
+                        setMobileSolutionsOpen(false)
+                      }}
+                      className="block py-1 text-sm text-cream/70 transition-colors hover:text-cream"
+                    >
+                      {item}
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
           <Link
             key={link.label}
             href={link.href}
-            onClick={() => setMobileOpen(false)}
+            onClick={() => {
+              setMobileOpen(false)
+              setMobileSolutionsOpen(false)
+            }}
             className="text-[22px] font-bold text-cream py-3 border-b border-gold/10 block tracking-tight"
           >
             {link.label}
