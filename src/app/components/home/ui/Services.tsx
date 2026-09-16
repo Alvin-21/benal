@@ -2,34 +2,43 @@ import FadeUp from '@/app/components/ui/FadeUp'
 
 const services = [
   {
-    title: 'Web Development',
-    desc:  'Modern, responsive and high-performance websites and web applications designed around your business goals and users.',
-    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg>,
-  },
-  {
-    title: 'Software Solutions',
+    title: 'Software Development',
     desc:  'Custom software built to streamline processes, improve productivity and solve specific business challenges at scale.',
     icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>,
   },
   {
-    title: 'Digital Platforms',
-    desc:  'Scalable digital platforms that connect businesses, customers, teams and data in one coherent system.',
-    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg>,
-  },
-  {
-    title: 'IT Solutions',
-    desc:  'Technology solutions that help businesses improve their infrastructure, systems and digital operations reliably.',
+    title: 'Digital Marketing',
+    desc:  'Strategic campaigns designed to increase brand visibility, drive targeted traffic, and maximise customer conversion across digital channels.',
     icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /></svg>,
   },
   {
-    title: 'Business Automation',
-    desc:  'Automate repetitive workflows and processes to save time, reduce errors and free your team for high-value work.',
-    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>,
+    title: 'Networking & Infrastructure',
+    desc:  'Secure, reliable connectivity solutions designed to optimize network architecture, streamline systems management, and safeguard enterprise IT environments.',
+    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="6" cy="6" r="2.5" />
+        <circle cx="18" cy="6" r="2.5" />
+        <circle cx="18" cy="18" r="2.5" />
+        <circle cx="6" cy="18" r="2.5" />
+        <path d="M8.5 7.5h7M8.5 16.5h7M7 8.5l-1 1.5M17 8.5l1 1.5M7 15.5l-1-1.5M17 15.5l1-1.5" />
+      </svg>,
   },
   {
-    title: 'Digital Consulting',
-    desc:  'Technology strategy and guidance to help organisations make smarter digital decisions with confidence and clarity.',
-    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 8v4l3 3" /></svg>,
+    title: 'Security & Surveillance',
+    desc:  'Advanced physical and digital security solutions engineered to protect assets, ensure real-time threat monitoring, and safeguard organizational operations.',
+    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2.75 18.5 5v6.5c0 4.42-2.9 8.3-6.5 10.25C8.4 19.8 5.5 15.92 5.5 11.5V5L12 2.75Z" />
+        <path d="M9.5 12.5 11.1 14l3.4-4" />
+      </svg>,
+  },
+  {
+    title: 'Computer Literacy',
+    desc:  'Essential digital skills training to empower users, improve workplace productivity, and build long-term organizational capability.',
+    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>,
+  },
+  {
+    title: 'IT Support & Maintenance',
+    desc:  'Proactive technical support and maintenance services engineered to optimize system uptime, resolve infrastructure issues, and deliver continuous peak performance.',
+    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>,
   },
 ]
 

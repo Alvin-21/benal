@@ -1,28 +1,42 @@
 const items = [
   {
-    label: 'Web Development',
-    icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg>,
+    label: 'Software Development',
+    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>,
   },
   {
-    label: 'Custom Software',
-    icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>,
+    label: 'Digital Marketing',
+    icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /></svg>,
   },
   {
-    label: 'Digital Platforms',
-    icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg>,
+    label: 'Networking & Infrastructure',
+    icon: (
+      <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="6" cy="6" r="2.5" />
+        <circle cx="18" cy="6" r="2.5" />
+        <circle cx="18" cy="18" r="2.5" />
+        <circle cx="6" cy="18" r="2.5" />
+        <path d="M8.5 7.5h7M8.5 16.5h7M7 8.5l-1 1.5M17 8.5l1 1.5M7 15.5l-1-1.5M17 15.5l1-1.5" />
+      </svg>
+    ),
   },
   {
-    label: 'IT Solutions',
+    label: 'Security & Surveillance',
+    icon: (
+      <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2.75 18.5 5v6.5c0 4.42-2.9 8.3-6.5 10.25C8.4 19.8 5.5 15.92 5.5 11.5V5L12 2.75Z" />
+        <path d="M9.5 12.5 11.1 14l3.4-4" />
+      </svg>
+    ),
+  },
+  {
+    label: 'Computer Literacy',
     icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>,
   },
   {
-    label: 'Business Automation',
+    label: 'IT Support & Maintenance',
     icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>,
   },
-  {
-    label: 'Digital Consulting',
-    icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /></svg>,
-  },
+  
 ]
 
 export default function TrustStrip() {

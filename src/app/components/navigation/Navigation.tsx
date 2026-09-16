@@ -4,23 +4,22 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const megaServices = [
-  { label: 'Software Dev', items: ['Web Development', 'Custom Software', 'Mobile Apps'] },
-  { label: 'Cloud & DevOps', items: ['Cloud Infrastructure', 'CI/CD Pipelines', 'Systems Integration'] },
-  { label: 'Data & AI', items: ['Business Automation', 'Data Platforms', 'AI Integration'] },
-  { label: 'IT & Consulting', items: ['IT Solutions', 'Digital Strategy', 'Technology Audit'] },
+  { label: 'Software Development', items: ['Web Development', 'Mobile Apps', 'Cloud Computing', 'Gaming Development'] },
+  { label: 'Digital Marketing & Branding', items: ['SEO (Search Engine Optimization)', 'Branding & Re-Branding', 'Content Creation'] },
+  { label: 'Networking & Infrastructure', items: ['Network Device Management', 'Install Network Devices', 'Network Troubleshooting'] },
+  { label: 'CCTV Installation & Management', items: ['Remote Viewing', 'Monitoring System Setup'] },
+  { label: 'Computer Literacy', items: ['Hardware & Orientation', 'MS Office Productivity', 'Email & Communication', 'File Management', 'Web Browsing & Internet Skills'] },
 ]
 
 const navLinks = [
-  { label: 'Our Approach', href: '#why' },
-  { label: 'Process', href: '#process' },
-  { label: 'Work', href: '#' },
+  { label: 'Work / Case Studies', href: '#why' },
+  { label: 'Media Library', href: '#process' },
 ]
 
 const mobileLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Our Approach', href: '#why' },
-  { label: 'Process', href: '#process' },
-  { label: 'Work', href: '#' },
+  { label: 'Solutions', href: '#services' },
+  { label: 'Work / Case Studies', href: '#why' },
+  { label: 'Media Library', href: '#process' },
 ]
 
 export default function Navigation() {
@@ -89,7 +88,7 @@ export default function Navigation() {
                 aria-expanded={dropdownOpen}
                 className="flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium text-cream/75 rounded-md transition-colors duration-200 hover:text-cream hover:bg-cream/5 cursor-pointer"
               >
-                Services
+                Solutions
                 <svg
                   width="14" height="14" fill="none" stroke="#22AFA9" strokeWidth="2"
                   viewBox="0 0 24 24" aria-hidden="true"

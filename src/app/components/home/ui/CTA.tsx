@@ -39,7 +39,7 @@ export default function CTA() {
                 href="#services"
                 className="text-[15px] font-medium text-cream/75 px-6 py-3.5 rounded-[9px] border border-gold/[0.18] transition-all duration-200 hover:text-cream hover:border-gold/35"
               >
-                View Our Services
+                View Our Solutions
               </Link>
             </div>
           </div>
