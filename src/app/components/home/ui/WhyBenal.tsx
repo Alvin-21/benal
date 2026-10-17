@@ -34,7 +34,7 @@ export default function WhyBenal() {
         {/* Header */}
         <div className="text-center mb-16">
           <FadeUp>
-            <p className="text-[11px] font-bold tracking-[0.2em] uppercase text-teal mb-4">Our Approach</p>
+            <p className="text-sm font-bold tracking-[0.2em] uppercase text-teal mb-4">Our Approach</p>
           </FadeUp>
           <FadeUp delay={100}>
             <h2 id="why-heading" className="text-[clamp(34px,5vw,58px)] font-extrabold tracking-[-0.025em] leading-[1.1] text-cream">
@@ -42,7 +42,7 @@ export default function WhyBenal() {
             </h2>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="max-w-[560px] mx-auto mt-4 text-[17px] leading-[1.75] text-cream/55">
+            <p className="max-w-[560px] mx-auto mt-4 text-xl leading-[1.75] text-cream/55">
               We focus on business outcomes, not technology for its own sake. Every solution starts with
               understanding what your organisation actually needs to achieve.
             </p>
@@ -58,9 +58,9 @@ export default function WhyBenal() {
                 <div className="absolute top-8 right-8 w-9 h-9 text-teal/30" aria-hidden="true">
                   {c.icon}
                 </div>
-                <p className="text-[11px] font-bold tracking-[0.15em] text-gold mb-3.5">{c.num}</p>
-                <h3 className="text-[20px] font-bold text-cream tracking-[-0.02em] mb-2.5">{c.title}</h3>
-                <p className="text-[15px] leading-[1.75] text-cream/55">{c.desc}</p>
+                <p className="text-sm font-bold tracking-[0.15em] text-gold mb-3.5">{c.num}</p>
+                <h3 className="text-2xl font-bold text-cream tracking-[-0.02em] mb-2.5">{c.title}</h3>
+                <p className="text-lg leading-[1.75] text-cream/55">{c.desc}</p>
               </div>
             </FadeUp>
           ))}

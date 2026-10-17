@@ -50,7 +50,7 @@ export default function Services() {
         {/* Header */}
         <div className="text-center mb-16">
           <FadeUp>
-            <p className="text-[11px] font-bold tracking-[0.2em] uppercase text-teal mb-4">What We Build</p>
+            <p className="text-sm font-bold tracking-[0.2em] uppercase text-teal mb-4">What We Build</p>
           </FadeUp>
           <FadeUp delay={100}>
             <h2 id="services-heading" className="text-[clamp(34px,5vw,58px)] font-extrabold tracking-[-0.025em] leading-[1.1] text-cream">
@@ -58,7 +58,7 @@ export default function Services() {
             </h2>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="max-w-[560px] mx-auto mt-4 text-[17px] leading-[1.75] text-cream/55">
+            <p className="max-w-[560px] mx-auto mt-4 text-xl leading-[1.75] text-cream/55">
               From digital experiences to business systems, we build practical technology solutions designed around your goals.
             </p>
           </FadeUp>
@@ -76,11 +76,11 @@ export default function Services() {
                   {s.icon}
                 </div>
 
-                <h3 className="text-[17px] font-bold text-cream tracking-[-0.01em] mb-2.5">{s.title}</h3>
-                <p className="text-sm leading-[1.7] text-cream/55">{s.desc}</p>
+                <h3 className="text-xl font-bold text-cream tracking-[-0.01em] mb-2.5">{s.title}</h3>
+                <p className="text- leading-[1.7] text-cream/55">{s.desc}</p>
 
                 {/* Reveal arrow on hover */}
-                <span className="inline-flex items-center gap-1.5 mt-4 text-[13px] font-medium text-cta opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                <span className="inline-flex items-center gap-1.5 mt-4 text-sm font-medium text-cta opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
                   Learn more
                   <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </span>

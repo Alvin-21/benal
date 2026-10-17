@@ -5,12 +5,12 @@ const items = [
   },
   {
     label: 'Digital Marketing',
-    icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /></svg>,
+    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /></svg>,
   },
   {
     label: 'Networking & Infrastructure',
     icon: (
-      <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
+      <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
         <circle cx="6" cy="6" r="2.5" />
         <circle cx="18" cy="6" r="2.5" />
         <circle cx="18" cy="18" r="2.5" />
@@ -22,7 +22,7 @@ const items = [
   {
     label: 'Security & Surveillance',
     icon: (
-      <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
+      <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M12 2.75 18.5 5v6.5c0 4.42-2.9 8.3-6.5 10.25C8.4 19.8 5.5 15.92 5.5 11.5V5L12 2.75Z" />
         <path d="M9.5 12.5 11.1 14l3.4-4" />
       </svg>
@@ -30,11 +30,11 @@ const items = [
   },
   {
     label: 'Computer Literacy',
-    icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>,
+    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>,
   },
   {
     label: 'IT Support & Maintenance',
-    icon: <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>,
+    icon: <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>,
   },
   
 ]
@@ -54,7 +54,7 @@ export default function TrustStrip() {
             } ${i % 3 === 2 && i < items.length - 1 ? 'lg:border-r lg:border-gold/10' : ''} last:border-b-0`}
           >
             {item.icon}
-            <span className="text-[13px] font-medium text-cream/55 whitespace-nowrap">{item.label}</span>
+            <span className="font-medium text-cream/55 whitespace-nowrap">{item.label}</span>
           </div>
         ))}
       </div>

@@ -17,7 +17,7 @@ export default function Process() {
         {/* Header */}
         <div className="text-center mb-16">
           <FadeUp>
-            <p className="text-[11px] font-bold tracking-[0.2em] uppercase text-teal mb-4">How We Work</p>
+            <p className="text-sm font-bold tracking-[0.2em] uppercase text-teal mb-4">How We Work</p>
           </FadeUp>
           <FadeUp delay={100}>
             <h2 id="process-heading" className="text-[clamp(34px,5vw,58px)] font-extrabold tracking-[-0.025em] leading-[1.1] text-cream">
@@ -25,7 +25,7 @@ export default function Process() {
             </h2>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="max-w-[560px] mx-auto mt-4 text-[17px] leading-[1.75] text-cream/55">
+            <p className="max-w-[560px] mx-auto mt-4 text-xl leading-[1.75] text-cream/55">
               A structured, transparent process that keeps you informed and in control at every stage.
             </p>
           </FadeUp>
@@ -50,9 +50,9 @@ export default function Process() {
                   >
                     {/* Step circle */}
                     <div className="flex md:justify-center mb-0 md:mb-6 shrink-0">
-                      <div className={`w-14 h-14 rounded-full flex items-center justify-center text-[13px] font-bold tracking-[0.05em] border ${
+                      <div className={`w-14 h-14 rounded-full flex items-center justify-center text-sm font-bold tracking-[0.05em] border ${
                         isAccent
-                          ? 'bg-cta/8 border-cta/25 text-cta'
+                          ? 'bg-[#210300] border-cta/25 text-cta'
                           : 'bg-surface border-gold/[0.18] text-teal'
                       }`}>
                         {s.num}
@@ -60,8 +60,8 @@ export default function Process() {
                     </div>
 
                     <div>
-                      <h3 className="text-[17px] font-bold text-cream tracking-[-0.01em] mb-2.5">{s.title}</h3>
-                      <p className="text-sm leading-[1.7] text-cream/55">{s.desc}</p>
+                      <h3 className="text-xl font-bold text-cream tracking-[-0.01em] mb-2.5">{s.title}</h3>
+                      <p className="text-lg leading-[1.7] text-cream/55">{s.desc}</p>
                     </div>
                   </div>
                 </FadeUp>
