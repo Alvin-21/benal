@@ -47,7 +47,7 @@ export default function Hero() {
           x: Math.random() * W, y: Math.random() * H,
           vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35,
           r: Math.random() * 2.5 + 1.5,
-          color: Math.random() < 0.65 ? TEAL : ORANGE,
+          color: Math.random() < 0.55 ? TEAL : ORANGE,
           pulse: Math.random() * Math.PI * 2,
           pulseSpeed: 0.01 + Math.random() * 0.02,
           alpha: 0.4 + Math.random() * 0.5,
@@ -63,7 +63,7 @@ export default function Hero() {
     function draw() {
       ctx!.clearRect(0, 0, W, H)
       const grd = ctx!.createRadialGradient(W*.5, H*.45, 0, W*.5, H*.45, W*.45)
-      grd.addColorStop(0, 'rgba(34,175,169,0.04)')
+      grd.addColorStop(0, 'rgba(34, 175, 168, 0.41)')
       grd.addColorStop(1, 'transparent')
       ctx!.fillStyle = grd
       ctx!.fillRect(0, 0, W, H)
@@ -73,7 +73,7 @@ export default function Hero() {
           const dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y
           const dist = Math.sqrt(dx*dx + dy*dy)
           if (dist < 140) {
-            const a = (1 - dist/140) * 0.25
+            const a = (1 - dist/140)
             ctx!.strokeStyle = nodes[i].color === TEAL ? `rgba(34,175,169,${a})` : `rgba(237,87,37,${a*.7})`
             ctx!.lineWidth = 0.7
             ctx!.beginPath()
