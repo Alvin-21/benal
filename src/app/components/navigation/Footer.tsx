@@ -35,7 +35,7 @@ const socialLinks = [
 
 const contactItems = [
   {
-    text: 'hello@benaldigital.com',
+    text: 'benaldigital2026@gmail.com',
     icon: <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>,
   },
   {
@@ -43,7 +43,7 @@ const contactItems = [
     icon: <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.06 6.06l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>,
   },
   {
-    text: 'Karen, Nairobi, Kenya',
+    text: 'Waterfront, Nairobi, Kenya',
     icon: <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>,
   },
 ]
@@ -111,7 +111,21 @@ export default function Footer() {
             {contactItems.map((item) => (
               <div key={item.text} className="flex items-start gap-2.5 mb-3">
                 <span className="text-teal shrink-0 mt-0.5">{item.icon}</span>
-                <span className="text-cream/55 leading-[1.5]">{item.text}</span>
+                {item.text === 'benaldigital2026@gmail.com' && (
+                  <a href="mailto:benaldigital2026@gmail.com" className="text-cream/55 leading-[1.5] transition-colors duration-200 hover:text-cream">
+                    {item.text}
+                  </a>
+                )}
+                {item.text === '+254 111 801 112' && (
+                  <a href="tel:+254111801112" className="text-cream/55 leading-[1.5] transition-colors duration-200 hover:text-cream">
+                    {item.text}
+                  </a>
+                )}
+                {item.text === 'Waterfront, Nairobi, Kenya' && (
+                  <a href="https://www.google.com/maps/search/?api=1&query=Waterfront%2C+Nairobi%2C+Kenya" target="_blank" rel="noopener noreferrer" className="text-cream/55 leading-[1.5] transition-colors duration-200 hover:text-cream">
+                    {item.text}
+                  </a>
+                )}
               </div>
             ))}
           </div>
