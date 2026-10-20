@@ -12,13 +12,13 @@ const megaServices = [
 ]
 
 const navLinks = [
-  { label: 'Work / Case Studies', href: '#why' },
+  { label: 'Portfolio', href: '#why' },
   { label: 'Media Library', href: '#process' },
 ]
 
 const mobileLinks = [
   { label: 'Solutions', href: '#services' },
-  { label: 'Work / Case Studies', href: '#why' },
+  { label: 'Portfolio', href: '#why' },
   { label: 'Media Library', href: '#process' },
 ]
 
